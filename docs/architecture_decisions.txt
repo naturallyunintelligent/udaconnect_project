@@ -1,0 +1,5 @@
+strangle location
+strangle connection
+api for FE
+grpc for location
+kafka for the grpc location
