@@ -54,3 +54,13 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: naturallyunintelligent/udaconnect-app:latest
+
+      -
+        name: Build and push location service
+        uses: docker/build-push-action@v2
+        with:
+          context: ./modules/location_api
+          file: ./modules/location_api/Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: naturallyunintelligent/udaconnect-location:latest
